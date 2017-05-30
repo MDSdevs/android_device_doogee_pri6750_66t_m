@@ -13,15 +13,15 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/bluboo/pri6750_66t_m/pri6750_66t_m-vendor.mk
+VENDOR_BLOBS ?= vendor/doogee/pri6750_66t_m/pri6750_66t_m-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-MTK_PROJECT_CONFIG ?= device/bluboo/pri6750_66t_m/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/doogee/pri6750_66t_m/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/bluboo/pri6750_66t_m/prebuilts/kernel
+	LOCAL_KERNEL := device/doogee/pri6750_66t_m/prebuilts/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
