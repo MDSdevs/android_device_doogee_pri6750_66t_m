@@ -16,10 +16,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from pri6750_66t_m
-$(call inherit-product, device/bluboo/pri6750_66t_m/device.mk)
+$(call inherit-product, device/doogee/pri6750_66t_m/device.mk)
 
 PRODUCT_DEVICE := pri6750_66t_m
 PRODUCT_NAME := full_pri6750_66t_m
-PRODUCT_BRAND := bluboo
+PRODUCT_BRAND := doogee
 PRODUCT_MODEL := pri6750_66t_m
-PRODUCT_MANUFACTURER := bluboo
+PRODUCT_MANUFACTURER := doogee
